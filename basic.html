@@ -7,69 +7,75 @@
 
         <link rel="shortcut icon" href="images/favicon.ico"  type="image/x-icon" />
         <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/index.css">
 
         <title>nginap.com | uhuii..</title>
     </head>
 <body>
 	<div id="jumbo-img">
-			<header>
-				<div class="wrapper column-first">
-					<div style="display: flex;">
-						<div>
-							<a href="#" style=""><img class="logo" src="images/icon.svg"></a>
-						</div>
-						<div>
-							<h1 style="margin-bottom: 0;">Nginap .com</h1>
-							<h5 style="margin-top: 0;">*bayar dulu, liburan kemudian</h5>
-						</div>
-					</div>
-					<nav>
-						<ul class="nav">
-							<li class="nav-item"><a href="#">Promo</a></li>
-							<li class="nav-item"><a href="#">Cek Pesanan</a></li>
-							<li class="nav-item"><a href="#">Log In</a></li>
-							<li class="nav-item" id="register"><a href="sign-up.html">Register</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
-			<div class="wrapper">
-				<div class="search-form input-text">
-					<h2 id="form-title">Cari Kamar Sekarang..</h2>
-					<form action="search.html" method="post" class="column">
-		                <div>
-		                    <label for="lokasi">Lokasi</label>
-		                    <input id="lokasi" class="search-form-input" name="lokasi">
-		                </div>
-		                <div class="row">
-			                <div>
-			                    <label for="checkin">Check-in</label>
-			                    <input id="checkin" class="search-form-input" name="checkin" type="date">
-			                </div>
-			                <div>
-			                    <label for="checkout">Check-out</label>
-			                    <input id="checkout" class="search-form-input" name="checkout" type="date">
-			                </div>
-			            </div>
-		                <div class="column-item">
-		                    <label for="guest">Tamu</label>
-		                    <select id="guest" class="kotak" name="guest">
-		                        <option value="1">1</option>
-		                        <option value="2">2</option>
-		                        <option value="3">3</option>
-		                        <option value="4">4</option>
-		                        <option value="5">>4</option>
-		                    </select>
-		                </div>
-		                <button type="submit">Cari</button>
-		            </form>
-		        </div>
-			</div>
+        <header>
+                <div class="wrapper column-first">
+                    <div style="display: flex;">
+                        <div>
+                            <a href="#" style=""><img class="logo" src="images/icon.svg"></a>
+                        </div>
+                        <div>
+                            <h1 style="margin-bottom: 0;">Nginap .com</h1>
+                            <h5 style="margin-top: 0;">*bayar dulu, nginapnya kemudian</h5>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#">Promo</a></li>
+                            <li class="nav-item dropdown"><a href="#">Kategori</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#luxury">Luxury</a></li>
+                                    <li><a href="#budget">Budget</a></li>
+                                    <li><a href="#apartments">Apartments</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#">Log In</a></li>
+                            <li class="nav-item" id="register"><a href="sign-up.html">Register</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="wrapper">
+                <div class="search-form input-text">
+                    <h2 id="form-title">Cari Kamar Sekarang..</h2>
+                    <form action="#" method="post" class="column">
+                        <div>
+                            <label for="lokasi">Lokasi</label>
+                            <input id="lokasi" class="search-form-input" name="lokasi" required>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <label for="checkin">Check-in</label>
+                                <input id="checkin" class="search-form-input" name="checkin" type="date" required>
+                            </div>
+                            <div>
+                                <label for="checkout">Check-out</label>
+                                <input id="checkout" class="search-form-input" name="checkout" type="date" required>
+                            </div>
+                        </div>
+                        <div class="column-item">
+                            <label for="guest">Tamu</label>
+                            <select id="guest" class="kotak" name="guest">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">>4</option>
+                            </select>
+                        </div>
+                        <button type="submit">Cari</button>
+                    </form>
+                </div>
+            </div>
 	</div>
 	<main class="wrapper">
-		<h1>Luxury</h1>
+		<h1 id="luxury">Luxury</h1>
 		<div class="column-first">
 			<div class="room-item">
                 <a href="#"><img src="images/4.jpg" title="Private Family Love Villa4 BALI" alt="Private Family Love Villa4 BALI"></a>
@@ -94,7 +100,7 @@
         </div>
         <a href="">Lihat Semua ...</a>
         <hr>
-        <h1>Budget</h1>
+        <h1 id="budget">Budget</h1>
         <div class="column-first">
             <div class="room-item">
                 <a href="#"><img src="images/5.jpg" title="Silvia's Budget Room" alt="Silvia's Budget Room"></a>
@@ -119,7 +125,7 @@
         </div>
         <a href="">Lihat Semua ...</a>
         <hr>
-        <h1>Apartments</h1>
+        <h1 id="apartments">Apartments</h1>
         <div class="column-first">
             <div class="room-item">
                 <a href="#"><img src="images/9.jpg" title="Low Cost beds in dormitory" alt="Low Cost beds in dormitory"></a>
@@ -144,33 +150,35 @@
         </div>
         <a href="">Lihat Semua ...</a>
 	</main>
-	<footer class="wrapper">
-		<div style="display: block;">
+	<footer>
+        <div class="wrapper">
+    		<div>
                 <a href="#"><img id="logo" src="images/icon-white.svg"></a>
-        </div>
-		<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-            <div class="footer-menu">
-                <h2 class="t-white">About Us</h2>
-                <ul>
-                    <li><a href="#">Cara Booking</a></li>
-                    <li class="nonstyle"><a href="#">Kontak Kami</a></li>
-                    <li><a href="#">Pusat Bantuan</a></li>
-                    <li><a href="#">Karir</a></li>
-                </ul>
             </div>
-            <div class="footer-menu">
-                <h2>Follow Us</h2>
-                <ul class="nonstyle">
-                    <li><a href="#">
-                        <svg stroke-width="0" accent="#434343" fill="none" height="24" stroke="currentColor" stroke-linecap="round" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#fff" d="M24,5.24619616 C23.1381518,5.63362472 22.2244738,5.88871437 21.2888889,6.00311095 C22.2743441,5.40355599 23.011565,4.45990053 23.362963,3.34826055 C22.4368334,3.90715977 21.4234284,4.30071681 20.3666667,4.51187583 C18.9039309,2.93095261 16.5800458,2.54420482 14.697916,3.56846568 C12.8157862,4.59272653 11.8433969,6.77331701 12.3259259,8.88767181 C8.4037037,8.68808731 4.92962963,6.77885447 2.6,3.87546489 C1.35009518,6.06882613 1.99033783,8.8721064 4.06296296,10.2809976 C3.31387525,10.2573637 2.58118508,10.0520791 1.92592593,9.68224406 L1.92592593,9.74249598 C1.92403325,12.02712 3.50820818,13.9955926 5.71111111,14.4459118 C5.30589257,14.5601073 4.88715867,14.6171271 4.46666667,14.6153703 C4.16833737,14.6152689 3.87069617,14.5862671 3.57777778,14.5287582 C4.19372273,16.4838865 5.96631993,17.8227307 7.98518519,17.857677 C6.31435628,19.1921316 4.25059961,19.916333 2.12592593,19.9137739 C1.74962306,19.914049 1.3736416,19.8914141 1,19.8459905 C3.15819874,21.2541055 5.66899891,22.0017939 8.23333333,21.9999968 C16.9148148,21.9999968 21.6592593,14.6906852 21.6592593,8.34917024 C21.6592593,8.14205425 21.6555556,7.93117252 21.6444444,7.72782228 C22.5702475,7.05164173 23.3682544,6.2109251 24,5.24619616"></path>
-                        </svg>
-                        Twitter
-                    </a></li>
-                    <li><a href="#">
-                        <svg stroke-width="0" accent="#434343" fill="none" height="24" stroke="currentColor" stroke-linecap="round" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#fff" d="M7,8.60454545 L9.35682098,8.60454545 L9.35682098,6.29545455 C9.35682098,5.27727273 9.38385907,3.70454545 10.1138878,2.73181818 C10.8889799,1.7 11.9479721,1 13.7730438,1 C16.7472347,1 18,1.42727273 18,1.42727273 L17.4096682,4.95 C17.4096682,4.95 16.4272839,4.66363636 15.5124949,4.66363636 C14.5977059,4.66363636 13.7730438,4.99545455 13.7730438,5.91818182 L13.7730438,8.60454545 L17.5313396,8.60454545 L17.2744777,12.0454545 L13.7775502,12.0454545 L13.7775502,24 L9.35682098,24 L9.35682098,12.0454545 L7,12.0454545 L7,8.60454545 Z"></path></svg>
-                        Facebook
-                    </a></li>
-                </ul>
+    		<div style="display: flex;">
+                <div class="footer-menu">
+                    <h2 class="t-white">About Us</h2>
+                    <ul>
+                        <li><a href="#" class="t-white">Cara Booking</a></li>
+                        <li><a href="#" class="t-white">Kontak Kami</a></li>
+                        <li><a href="#" class="t-white">Pusat Bantuan</a></li>
+                        <li><a href="#" class="t-white">Karir</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h2 class="t-white">Follow Us</h2>
+                    <ul>
+                        <li><a href="#" class="t-white">
+                            <svg stroke-width="0" accent="#434343" fill="none" height="24" stroke="currentColor" stroke-linecap="round" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#fff" d="M24,5.24619616 C23.1381518,5.63362472 22.2244738,5.88871437 21.2888889,6.00311095 C22.2743441,5.40355599 23.011565,4.45990053 23.362963,3.34826055 C22.4368334,3.90715977 21.4234284,4.30071681 20.3666667,4.51187583 C18.9039309,2.93095261 16.5800458,2.54420482 14.697916,3.56846568 C12.8157862,4.59272653 11.8433969,6.77331701 12.3259259,8.88767181 C8.4037037,8.68808731 4.92962963,6.77885447 2.6,3.87546489 C1.35009518,6.06882613 1.99033783,8.8721064 4.06296296,10.2809976 C3.31387525,10.2573637 2.58118508,10.0520791 1.92592593,9.68224406 L1.92592593,9.74249598 C1.92403325,12.02712 3.50820818,13.9955926 5.71111111,14.4459118 C5.30589257,14.5601073 4.88715867,14.6171271 4.46666667,14.6153703 C4.16833737,14.6152689 3.87069617,14.5862671 3.57777778,14.5287582 C4.19372273,16.4838865 5.96631993,17.8227307 7.98518519,17.857677 C6.31435628,19.1921316 4.25059961,19.916333 2.12592593,19.9137739 C1.74962306,19.914049 1.3736416,19.8914141 1,19.8459905 C3.15819874,21.2541055 5.66899891,22.0017939 8.23333333,21.9999968 C16.9148148,21.9999968 21.6592593,14.6906852 21.6592593,8.34917024 C21.6592593,8.14205425 21.6555556,7.93117252 21.6444444,7.72782228 C22.5702475,7.05164173 23.3682544,6.2109251 24,5.24619616"></path>
+                            </svg>
+                            Twitter
+                        </a></li>
+                        <li><a href="#" class="t-white">
+                            <svg stroke-width="0" accent="#434343" fill="none" height="24" stroke="currentColor" stroke-linecap="round" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#fff" d="M7,8.60454545 L9.35682098,8.60454545 L9.35682098,6.29545455 C9.35682098,5.27727273 9.38385907,3.70454545 10.1138878,2.73181818 C10.8889799,1.7 11.9479721,1 13.7730438,1 C16.7472347,1 18,1.42727273 18,1.42727273 L17.4096682,4.95 C17.4096682,4.95 16.4272839,4.66363636 15.5124949,4.66363636 C14.5977059,4.66363636 13.7730438,4.99545455 13.7730438,5.91818182 L13.7730438,8.60454545 L17.5313396,8.60454545 L17.2744777,12.0454545 L13.7775502,12.0454545 L13.7775502,24 L9.35682098,24 L9.35682098,12.0454545 L7,12.0454545 L7,8.60454545 Z"></path></svg>
+                            Facebook
+                        </a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 	</footer>
