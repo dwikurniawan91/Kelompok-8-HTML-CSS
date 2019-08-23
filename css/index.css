@@ -16,44 +16,8 @@
 	background-position: center;
 	background-size: cover;
 	padding-bottom: 20px;
-	-webkit-animation: imgs 30s infinite;
-	        animation: imgs 30s infinite;
-}
-
-@-webkit-keyframes imgs {
-	0% {
-		background-image: url(../images/home_0.jpg);
-	}
-	25% {
-		background-image: url(../images/home.jpg);
-	}
-	50% {
-		background-image: url(../images/home_1.jpg);
-	}
-	75% {
-		background-image: url(../images/home_2.jpg);
-	}
-	100% {
-		background-image: url(../images/home_3.jpg);
-	}
-}
-
-@keyframes imgs {
-	0% {
-		background-image: url(../images/home_0.jpg);
-	}
-	25% {
-		background-image: url(../images/home.jpg);
-	}
-	50% {
-		background-image: url(../images/home_1.jpg);
-	}
-	75% {
-		background-image: url(../images/home_2.jpg);
-	}
-	100% {
-		background-image: url(../images/home_3.jpg);
-	}
+	-webkit-animation: imgs 25s infinite;
+	        animation: imgs 25s infinite;
 }
 
 .logo {
@@ -312,4 +276,41 @@ footer li {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* keyframe animation */
+@-webkit-keyframes imgs {
+	0% {
+		background-image: url(../images/home_0.jpg);
+	}
+	25% {
+		background-image: url(../images/home.jpg);
+	}
+	50% {
+		background-image: url(../images/home_1.jpg);
+	}
+	75% {
+		background-image: url(../images/home_2.jpg);
+	}
+	100% {
+		background-image: url(../images/home_3.jpg);
+	}
+}
+
+@keyframes imgs {
+	0% {
+		background-image: url(../images/home_0.jpg);
+	}
+	25% {
+		background-image: url(../images/home.jpg);
+	}
+	50% {
+		background-image: url(../images/home_1.jpg);
+	}
+	75% {
+		background-image: url(../images/home_2.jpg);
+	}
+	100% {
+		background-image: url(../images/home_3.jpg);
+	}
 }
