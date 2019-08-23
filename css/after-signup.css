@@ -1,0 +1,122 @@
+/* typography */
+body {
+	font-family: 'Livvic', sans-serif; 
+	font-size: 1em;
+	line-height: 1.4em; 
+	font-weight: normal;
+	background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:#333; 
+	font-weight: bold;
+	font-family: 'Livvic', sans-serif; 
+	line-height:1.5em;
+	margin: 0.5em 0;
+	padding: 0;
+} 
+
+/* links */
+a,
+a:visited,
+a:active,
+a:hover{color:#0099ff;}
+a:hover{ text-decoration:none;}
+
+#logo a {
+	text-decoration: none;
+	font-size: 30px;
+}
+
+#logo {
+	max-width: 70px;
+	max-height: 70px;
+}
+
+#jumbo-img {
+	padding:20px 0;
+}
+
+#jumbo-img h1{ 
+	line-height:1.2em;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+#content {  
+	margin:40px 0;
+}
+
+.header-menu {
+	clear: both;
+	font-size: 22px;
+	margin-bottom:60px;
+}
+
+.header-menu li a {
+	display: block;
+	margin: 1px 0; 
+	padding: 10px;
+}
+
+.header-menu li a:hover {
+	background: #0099ff;
+	opacity: 0.55;
+}
+
+footer ul {
+	margin:0;
+	padding:0;
+}
+
+/*colors and backgrounds*/
+footer { 
+	background:#333;
+	color:#ccc;
+}
+
+footer h1, footer h2, footer h3, footer h4{ 
+	color:#CCC; 
+	margin-bottom:10px;
+}
+
+.header-menu a, li a {
+	text-decoration:none;
+	color: black;
+}
+
+.header-menu li a {
+	background-color: transparent;
+	margin: 0; 
+	padding: 10px 20px;
+	height: 45px;
+}
+
+.header-menu li li a {
+	border-top:	1px solid rgba(255,255,255,.2);
+	background:	#333;
+	background: rgba(0,0,0,.6);
+	color:	#fff;
+	padding-left: 20px;
+	height: auto;
+}
+
+.search-form {
+	background-color: white;
+	opacity: 0.85;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.input-text {
+	color: black;
+	font-size: 20px;
+}
+
+.nonstyle {
+	list-style: none;
+}
+
+#content h1 {
+	padding-left: 20px;
+}
